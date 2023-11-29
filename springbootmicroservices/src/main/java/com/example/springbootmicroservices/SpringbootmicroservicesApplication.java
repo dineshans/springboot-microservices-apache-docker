@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootmicroservicesApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(SpringbootmicroservicesApplication.class, args);
+		System.out.println("Hello World!");
 	}
 
 }
