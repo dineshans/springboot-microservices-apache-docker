@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/emp")
-public class EmployeeRestController {
+public class EmployeeRestController extends Exception{
 
     List<String> list = new ArrayList<>();
 
