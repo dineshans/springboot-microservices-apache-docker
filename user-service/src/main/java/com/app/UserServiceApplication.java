@@ -28,7 +28,7 @@ public class UserServiceApplication {
 	private static final String BASEURL = "http://localhost:9191/orders";
 
 	@GetMapping("/getOrders")
-	
+
 	// using curcuite breaker module
 	//@CircuitBreaker(name = USER_SERVICE,fallbackMethod = "getAllAvailableProducts")
 
