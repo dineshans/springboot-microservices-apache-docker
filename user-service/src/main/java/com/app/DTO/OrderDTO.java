@@ -1,8 +1,6 @@
 package com.app.DTO;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
@@ -12,5 +10,6 @@ public class OrderDTO {
     private String name;
     private String category;
     private String color;
+    // To not generate setter for specific fields - @Setter(AccessLevel.NONE) / @Getter(AccessLevel.NONE)
     private double price;
 }

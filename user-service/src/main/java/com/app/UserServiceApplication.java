@@ -25,8 +25,6 @@ public class UserServiceApplication {
 	private int attempt=1;
 
 	public static final String USER_SERVICE="userService";
-	private static final String BASEURL = "http://localhost:9191/orders";
-
 	@GetMapping("/getOrders")
 
 	// using curcuite breaker module
@@ -41,6 +39,8 @@ public class UserServiceApplication {
 		return restTemplate.getForObject(BASEURL, ArrayList.class);
 
 	}
+
+	private static final String BASEURL = "http://localhost:9191/orders";
 
 	public List<OrderDTO> getAllAvailableProducts(Exception e){
 		return Stream.of(
